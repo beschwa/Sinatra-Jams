@@ -1,1 +1,8 @@
 <h1>Jams - An application for all your music needs!</h1>
+<h2>Here's a list of your artists</h2>
+<ul>
+	<% @allArtists.each do |artist| %>
+	<li><a href="/artists/<%=artist.id%>"><%= artist.name %></a></li>
+	<% end %>
+
+</ul>
